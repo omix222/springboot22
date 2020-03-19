@@ -13,4 +13,10 @@ public class HelloController {
         String result = helloService.concat("helllo ","SpringBoot 2.2");
         return result;
     }
+    @RequestMapping("/hello")
+    public String helloQuru() {
+        String aa = "dummy";
+        aa= aa+"bb";
+        return "Hello Guru!!";
+    }
 }
