@@ -65,4 +65,10 @@ public class HelloController {
             this.huga = huga;
         }
     }
+    @RequestMapping("/hello")
+    public String helloQuru() {
+        String aa = "dummy";
+        aa= aa+"bb";
+        return "Hello Guru!!";
+    }
 }
